@@ -1,16 +1,15 @@
 // requrie dependancies 
-var express = require("express");
-var bodyParser = require("body-parser");
-var path = require("path");
-var htmlRoutes = require("./app/routing/htmlRoutes");
-var apiRoutes = require("./app/routing/apiRoutes");
-// var friends = require("./app/data/friends");
-var fs = require("fs");
+const express = require("express");
+const bodyParser = require("body-parser");
+const path = require("path");
+const htmlRoutes = require("./app/routing/htmlRoutes");
+const apiRoutes = require("./app/routing/apiRoutes");
+const fs = require("fs");
 // dependancies installed 
 
 // set up express on PORT 3008
-var app = express();
-var PORT = process.env.PORT || 3008;
+const app = express();
+const PORT = process.env.PORT || 3008;
 
 // Sets up the Express app to handle data parsing
 app.use(bodyParser.json());
